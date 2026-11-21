@@ -1,0 +1,334 @@
+{
+  "calculus/3d-graphing-calculator/": {
+    "date": "2026-11-20",
+    "hash": "c8f8beba187d"
+  },
+  "calculus/derivative-graphing-calculator/": {
+    "date": "2026-11-20",
+    "hash": "30dd06b72ff5"
+  },
+  "calculus/integral-graphing-calculator/": {
+    "date": "2026-11-20",
+    "hash": "17aa66d9a22f"
+  },
+  "calculus/parametric-equation-grapher/": {
+    "date": "2026-11-20",
+    "hash": "62bb94ebcdc7"
+  },
+  "calculus/polar-graphing-calculator/": {
+    "date": "2026-11-20",
+    "hash": "aaed6a64d89e"
+  },
+  "calculus/slope-field-graphing-calculator/": {
+    "date": "2026-11-20",
+    "hash": "e8ff19db9417"
+  },
+  "calculus/tangent-line-graphing-calculator/": {
+    "date": "2026-11-20",
+    "hash": "7f4f5478b8a9"
+  },
+  "calculus/taylor-polynomial-calculator/": {
+    "date": "2026-11-20",
+    "hash": "b3d86cc14713"
+  },
+  "compare/desmos-alternative/": {
+    "date": "2026-11-20",
+    "hash": "6858e6b69d0b"
+  },
+  "compare/ti-83-plus-vs-ti-84-plus/": {
+    "date": "2026-11-20",
+    "hash": "cd425528bdd4"
+  },
+  "compare/ti-84-plus-ce-vs-online-graphing-calculator/": {
+    "date": "2026-11-20",
+    "hash": "c04e0cba7d10"
+  },
+  "data/compound-interest-grapher/": {
+    "date": "2026-11-20",
+    "hash": "6fece34cfdfd"
+  },
+  "data/exponential-growth-decay-calculator/": {
+    "date": "2026-11-20",
+    "hash": "d042eb0c0523"
+  },
+  "data/exponential-regression-calculator/": {
+    "date": "2026-11-20",
+    "hash": "be19005c7b87"
+  },
+  "data/line-of-best-fit-calculator/": {
+    "date": "2026-11-20",
+    "hash": "9366b8738d9f"
+  },
+  "data/linear-regression-calculator/": {
+    "date": "2026-11-20",
+    "hash": "2e68af79f907"
+  },
+  "data/quadratic-regression-calculator/": {
+    "date": "2026-11-20",
+    "hash": "07f8e5325408"
+  },
+  "exam-prep/act-graphing-calculator/": {
+    "date": "2026-11-20",
+    "hash": "56b0821a18ae"
+  },
+  "exam-prep/ap-calculus-graphing-calculator/": {
+    "date": "2026-11-20",
+    "hash": "b01887da059d"
+  },
+  "exam-prep/ap-precalculus-graphing-calculator/": {
+    "date": "2026-11-20",
+    "hash": "0c356789a7f9"
+  },
+  "exam-prep/deltamath-graphing-calculator/": {
+    "date": "2026-11-20",
+    "hash": "6971e500a2a3"
+  },
+  "exam-prep/digital-psat-graphing-calculator/": {
+    "date": "2026-11-20",
+    "hash": "5aec8e0d8b30"
+  },
+  "exam-prep/georgia-milestones-calculator/": {
+    "date": "2026-11-20",
+    "hash": "503a79b66547"
+  },
+  "exam-prep/nc-graphing-calculator/": {
+    "date": "2026-11-20",
+    "hash": "171d00628b5b"
+  },
+  "exam-prep/ny-regents-algebra-1-calculator/": {
+    "date": "2026-11-20",
+    "hash": "d777aa910f09"
+  },
+  "exam-prep/sat-graphing-calculator/": {
+    "date": "2026-11-20",
+    "hash": "45b895c3b9d1"
+  },
+  "exam-prep/smarter-balanced-graphing-calculator/": {
+    "date": "2026-11-20",
+    "hash": "77177814a991"
+  },
+  "exam-prep/texas-staar-algebra-1-calculator/": {
+    "date": "2026-11-20",
+    "hash": "6ad68b30c32f"
+  },
+  "exam-prep/virginia-sol-graphing-calculator/": {
+    "date": "2026-11-20",
+    "hash": "7ec764c0b9e2"
+  },
+  "functions/absolute-value-graphing-calculator/": {
+    "date": "2026-11-20",
+    "hash": "8c4cab1fd3b0"
+  },
+  "functions/asymptote-graphing-calculator/": {
+    "date": "2026-11-20",
+    "hash": "f1329d631a85"
+  },
+  "functions/cubic-function-grapher/": {
+    "date": "2026-11-20",
+    "hash": "e18d8824b111"
+  },
+  "functions/domain-and-range-grapher/": {
+    "date": "2026-11-20",
+    "hash": "eea8c2ecfc00"
+  },
+  "functions/exponential-graphing-calculator/": {
+    "date": "2026-11-20",
+    "hash": "03f2d83c3d47"
+  },
+  "functions/graphing-inequalities-calculator/": {
+    "date": "2026-11-20",
+    "hash": "a1f115aaefcc"
+  },
+  "functions/inverse-function-grapher/": {
+    "date": "2026-11-20",
+    "hash": "0f72fc153b57"
+  },
+  "functions/linear-equation-grapher/": {
+    "date": "2026-11-20",
+    "hash": "4c5a702a2c95"
+  },
+  "functions/logarithmic-graphing-calculator/": {
+    "date": "2026-11-20",
+    "hash": "3183ad42efbf"
+  },
+  "functions/number-line-graphing-calculator/": {
+    "date": "2026-11-20",
+    "hash": "cb87d4d24814"
+  },
+  "functions/piecewise-function-grapher/": {
+    "date": "2026-11-20",
+    "hash": "96e135f755ff"
+  },
+  "functions/polynomial-graphing-calculator/": {
+    "date": "2026-11-20",
+    "hash": "4d0466c1f3e4"
+  },
+  "functions/quadratic-graphing-calculator/": {
+    "date": "2026-11-20",
+    "hash": "0add518e5cf7"
+  },
+  "functions/rational-function-grapher/": {
+    "date": "2026-11-20",
+    "hash": "4905cf2b4694"
+  },
+  "functions/slope-intercept-form-grapher/": {
+    "date": "2026-11-20",
+    "hash": "bb8311c00647"
+  },
+  "functions/square-root-function-grapher/": {
+    "date": "2026-11-20",
+    "hash": "13b07dbf7696"
+  },
+  "functions/standard-form-graphing-calculator/": {
+    "date": "2026-11-20",
+    "hash": "d94db5c65882"
+  },
+  "functions/system-of-equations-grapher/": {
+    "date": "2026-11-20",
+    "hash": "44310c67dc26"
+  },
+  "functions/system-of-inequalities-grapher/": {
+    "date": "2026-11-20",
+    "hash": "2cbaa55f0857"
+  },
+  "functions/vertex-form-graphing-calculator/": {
+    "date": "2026-11-20",
+    "hash": "0302636b8879"
+  },
+  "guides/chromebook-graphing-calculator/": {
+    "date": "2026-11-20",
+    "hash": "10a068487a62"
+  },
+  "guides/graphing-calculator-for-ipad-and-tablets/": {
+    "date": "2026-11-20",
+    "hash": "003c0a9d2004"
+  },
+  "guides/how-to-graph-a-parabola/": {
+    "date": "2026-11-20",
+    "hash": "21c5b1a278ce"
+  },
+  "guides/how-to-use-a-graphing-calculator/": {
+    "date": "2026-11-20",
+    "hash": "d1e8fd6ceec7"
+  },
+  "guides/solve-equations-by-graphing/": {
+    "date": "2026-11-20",
+    "hash": "5d5e0bca7fb4"
+  },
+  "home": {
+    "date": "2026-11-20",
+    "hash": "a504f6e6ff84"
+  },
+  "hub:calculus/": {
+    "date": "2026-11-20",
+    "hash": "2b6ec1fe3d40"
+  },
+  "hub:data/": {
+    "date": "2026-11-20",
+    "hash": "de3efd24af86"
+  },
+  "hub:exam-prep/": {
+    "date": "2026-11-20",
+    "hash": "c2d60f3ca71a"
+  },
+  "hub:functions/": {
+    "date": "2026-11-20",
+    "hash": "f0ba6331973f"
+  },
+  "hub:guides/": {
+    "date": "2026-11-20",
+    "hash": "e626b35caa83"
+  },
+  "hub:statistics/": {
+    "date": "2026-11-20",
+    "hash": "3954a5463db9"
+  },
+  "hub:trigonometry/": {
+    "date": "2026-11-20",
+    "hash": "2c290959861b"
+  },
+  "legal:about": {
+    "date": "2026-11-20",
+    "hash": "2ed0915c4404"
+  },
+  "legal:contact": {
+    "date": "2026-11-20",
+    "hash": "a9643d5aef5c"
+  },
+  "legal:privacy-policy": {
+    "date": "2026-11-20",
+    "hash": "242ae3814260"
+  },
+  "legal:terms": {
+    "date": "2026-11-20",
+    "hash": "576d4a01df92"
+  },
+  "statistics/bell-curve-generator/": {
+    "date": "2026-11-20",
+    "hash": "c36f749e0b1b"
+  },
+  "statistics/chi-square-calculator/": {
+    "date": "2026-11-20",
+    "hash": "a308d9ce305a"
+  },
+  "statistics/confidence-interval-calculator/": {
+    "date": "2026-11-20",
+    "hash": "f6d2fb123dd5"
+  },
+  "statistics/normal-distribution-grapher/": {
+    "date": "2026-11-20",
+    "hash": "c6824907c567"
+  },
+  "statistics/projectile-motion-grapher/": {
+    "date": "2026-11-20",
+    "hash": "2abb9dd37bcb"
+  },
+  "statistics/standard-deviation-calculator/": {
+    "date": "2026-11-20",
+    "hash": "f0cf9135846c"
+  },
+  "statistics/supply-and-demand-grapher/": {
+    "date": "2026-11-20",
+    "hash": "d8f7935b3fae"
+  },
+  "statistics/t-test-calculator/": {
+    "date": "2026-11-20",
+    "hash": "e5fb321baf4f"
+  },
+  "statistics/z-score-calculator/": {
+    "date": "2026-11-20",
+    "hash": "d4497dc82891"
+  },
+  "trigonometry/circle-equation-grapher/": {
+    "date": "2026-11-20",
+    "hash": "c9f3359e6dff"
+  },
+  "trigonometry/conic-sections-grapher/": {
+    "date": "2026-11-20",
+    "hash": "123aedd515d9"
+  },
+  "trigonometry/cosine-grapher/": {
+    "date": "2026-11-20",
+    "hash": "3441c8d06417"
+  },
+  "trigonometry/ellipse-graphing-calculator/": {
+    "date": "2026-11-20",
+    "hash": "9097657177ab"
+  },
+  "trigonometry/hyperbola-graphing-calculator/": {
+    "date": "2026-11-20",
+    "hash": "35c0635ab1e1"
+  },
+  "trigonometry/sine-wave-grapher/": {
+    "date": "2026-11-20",
+    "hash": "c926746ee69f"
+  },
+  "trigonometry/trig-graphing-calculator/": {
+    "date": "2026-11-20",
+    "hash": "a82216224e90"
+  },
+  "trigonometry/unit-circle-calculator/": {
+    "date": "2026-11-20",
+    "hash": "99b317c3ecce"
+  }
+}

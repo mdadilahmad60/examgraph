@@ -1,0 +1,95 @@
+# ExamGrapher
+
+> Free online graphing calculator with regressions, sliders and exam mode, for the Digital SAT, PSAT, ACT, AP Precalculus, AP Calculus and US state tests.
+
+Free, browser-based graphing calculators and statistics tools for US students. No sign-up. Pages are static HTML; the calculator runs client-side.
+
+## US Exam Prep
+- [North Carolina (NC) Graphing Calculator](https://examgraph.netlify.app/exam-prep/nc-graphing-calculator/): Practice North Carolina EOG and EOC math with a free online graphing calculator. Plot equations, check your answers and learn the test rules.
+- [Digital SAT Math Graphing Calculator](https://examgraph.netlify.app/exam-prep/sat-graphing-calculator/): Practice the Digital SAT Math section with a free graphing calculator. Solve systems by intersection, plot parabolas and check answers fast.
+- [ACT Math Practice Graphing Calculator](https://examgraph.netlify.app/exam-prep/act-graphing-calculator/): Free ACT Math practice calculator. Graph functions, find intercepts and work coordinate geometry problems right in your browser, no download.
+- [Online Graphing Calculator for DeltaMath](https://examgraph.netlify.app/exam-prep/deltamath-graphing-calculator/): Free online graphing calculator for DeltaMath homework. Plot transformations, intersections and AP Classroom problems fast, with no sign-up.
+- [Georgia Milestones EOC Practice Calculator](https://examgraph.netlify.app/exam-prep/georgia-milestones-calculator/): Practice Georgia Milestones Algebra 1 and Geometry EOC questions with a free online graphing calculator that plots, solves and checks your work.
+- [AP Calculus Online Graphing Calculator](https://examgraph.netlify.app/exam-prep/ap-calculus-graphing-calculator/): Free AP Calculus AB and BC practice calculator. Graph functions, compare a curve with its derivative, find roots and check free-response work.
+- [Virginia SOL Math Graphing Calculator](https://examgraph.netlify.app/exam-prep/virginia-sol-graphing-calculator/): Free Virginia SOL math practice calculator. Graph equations, find intercepts and check Algebra and Geometry answers right in your browser.
+- [AP Precalculus Graphing Calculator](https://examgraph.netlify.app/exam-prep/ap-precalculus-graphing-calculator/): Free AP Precalculus practice graphing calculator. Plot polynomial, exponential, log and trig functions and explore regressions online.
+- [Digital PSAT Graphing Calculator](https://examgraph.netlify.app/exam-prep/digital-psat-graphing-calculator/): Free Digital PSAT/NMSQT, PSAT 10 and PSAT 8/9 practice. Use a built-in graphing calculator to plot equations and check answers before test day.
+- [Texas STAAR Algebra I Graphing Calculator](https://examgraph.netlify.app/exam-prep/texas-staar-algebra-1-calculator/): Practice the Texas STAAR Algebra 1 EOC with a free online graphing calculator. Plot functions, solve systems and review answers in your browser.
+- [NY Regents Algebra I Graphing Calculator](https://examgraph.netlify.app/exam-prep/ny-regents-algebra-1-calculator/): Free NY Regents Algebra I practice calculator. Graph equations, find intercepts and check your answers online with no download or sign-up.
+- [Smarter Balanced (SBAC) Graphing Calculator](https://examgraph.netlify.app/exam-prep/smarter-balanced-graphing-calculator/): Free SBAC and CAASPP math practice calculator. Graph functions, solve equations and check your answers in your browser before the test.
+
+## Algebra & Functions
+- [Domain and Range Grapher](https://examgraph.netlify.app/functions/domain-and-range-grapher/): Find the domain and range from a graph. Plot any function, see where it exists and read restrictions quickly with this free online grapher.
+- [Linear Equation Grapher](https://examgraph.netlify.app/functions/linear-equation-grapher/): Graph any linear equation and see its slope, x-intercept and y-intercept instantly. A free online line grapher for algebra homework and tests.
+- [System of Equations Grapher](https://examgraph.netlify.app/functions/system-of-equations-grapher/): Solve a system of equations by graphing. Plot two or more equations and see the intersection point marked automatically, free and online.
+- [Graphing Inequalities Calculator](https://examgraph.netlify.app/functions/graphing-inequalities-calculator/): Graph linear and quadratic inequalities with shaded regions. A free online inequality grapher that shows solid or dashed boundaries clearly.
+- [Piecewise Function Grapher](https://examgraph.netlify.app/functions/piecewise-function-grapher/): Plot piecewise functions with a different rule on each interval. A free online grapher for step, absolute value and conditional definitions.
+- [Rational Function Grapher](https://examgraph.netlify.app/functions/rational-function-grapher/): Graph rational functions and see vertical asymptotes, horizontal asymptotes and holes clearly. Free online tool for precalculus and AP prep.
+- [Square Root Function Grapher](https://examgraph.netlify.app/functions/square-root-function-grapher/): Graph square root functions and their transformations online. See the starting point, domain and range change as you shift, stretch and reflect.
+- [Quadratic Graphing Calculator](https://examgraph.netlify.app/functions/quadratic-graphing-calculator/): Graph quadratics and parabolas with sliders. Find the vertex, roots and y-intercept automatically with this free online quadratic calculator.
+- [Absolute Value Graphing Calculator](https://examgraph.netlify.app/functions/absolute-value-graphing-calculator/): Graph absolute value functions and watch the vertex and V-shape move as you transform them. Free grapher with sliders and key points.
+- [System of Inequalities Grapher](https://examgraph.netlify.app/functions/system-of-inequalities-grapher/): Graph a system of inequalities and see the overlapping solution region shaded. A free online tool for algebra, linear programming and SAT prep.
+- [Inverse Function Grapher](https://examgraph.netlify.app/functions/inverse-function-grapher/): Graph a function and its inverse together. See the reflection across y = x and check domain and range with this free online grapher.
+- [Logarithmic Graphing Calculator](https://examgraph.netlify.app/functions/logarithmic-graphing-calculator/): Free logarithmic function graphing calculator. Plot transformations of log curves, compare them with exponentials and find intercepts in seconds.
+- [Number Line Inequality Grapher](https://examgraph.netlify.app/functions/number-line-graphing-calculator/): Graph inequalities on a number line with open and closed circles. A free online tool to visualize solution sets for algebra homework.
+- [Cubic Function Grapher](https://examgraph.netlify.app/functions/cubic-function-grapher/): Graph cubic functions and find roots, turning points and the inflection point. Use sliders to see how each coefficient changes the curve.
+- [Exponential Growth & Decay Grapher](https://examgraph.netlify.app/functions/exponential-graphing-calculator/): Graph exponential functions like y = a·bˣ, see the horizontal asymptote and compare growth and decay curves with free online sliders.
+- [Polynomial Function Grapher](https://examgraph.netlify.app/functions/polynomial-graphing-calculator/): Graph polynomial functions of any degree. See roots, end behavior and turning points with this free online polynomial grapher.
+- [Vertex Form Parabola Grapher](https://examgraph.netlify.app/functions/vertex-form-graphing-calculator/): Graph y = a(x − h)² + k and watch the vertex move as you drag the sliders. A free vertex form grapher for algebra and SAT prep.
+- [Asymptote & Discontinuity Grapher](https://examgraph.netlify.app/functions/asymptote-graphing-calculator/): Find vertical, horizontal and slant asymptotes by graphing. A free online tool that shows holes and discontinuities for precalculus and calculus.
+- [Slope-Intercept Form Grapher](https://examgraph.netlify.app/functions/slope-intercept-form-grapher/): Graph y = mx + b with sliders for the slope and intercept. See how each change moves the line in this free slope-intercept form grapher.
+- [Standard Form Line Grapher](https://examgraph.netlify.app/functions/standard-form-graphing-calculator/): Graph lines in standard form Ax + By = C and see both intercepts instantly. A free online grapher for algebra homework and exam practice.
+
+## Trigonometry & Conics
+- [Cosine Grapher](https://examgraph.netlify.app/trigonometry/cosine-grapher/): Graph y = a·cos(bx − c) + d with amplitude, period and phase shift sliders. A free online cosine grapher for trigonometry and precalculus.
+- [Sine Wave Grapher](https://examgraph.netlify.app/trigonometry/sine-wave-grapher/): Plot sine waves and change amplitude, frequency and phase with sliders. A free online sine graph calculator for trig and physics classes.
+- [Trig Graphing Calculator](https://examgraph.netlify.app/trigonometry/trig-graphing-calculator/): Free trig graphing calculator with a degrees and radians switch. Plot transformations, find zeros and check answers for SAT, ACT and AP.
+- [Unit Circle Grapher](https://examgraph.netlify.app/trigonometry/unit-circle-calculator/): Graph the unit circle x² + y² = 1 and explore sine and cosine ratios at any angle in degrees or radians with this free interactive tool.
+- [Conic Sections Grapher](https://examgraph.netlify.app/trigonometry/conic-sections-grapher/): Graph circles, ellipses, parabolas and hyperbolas from their equations on one grid. A free online conic sections grapher with sliders.
+- [Circle Equation Grapher](https://examgraph.netlify.app/trigonometry/circle-equation-grapher/): Graph a circle from its equation and read the center and radius instantly. A free online circle grapher for geometry and algebra practice.
+- [Ellipse Equation Grapher](https://examgraph.netlify.app/trigonometry/ellipse-graphing-calculator/): Graph horizontal and vertical ellipses from their standard-form equation. See the center and axes change with sliders in this free grapher.
+- [Hyperbola Equation Grapher](https://examgraph.netlify.app/trigonometry/hyperbola-graphing-calculator/): Graph a hyperbola from its equation and see both branches and the asymptotes. A free online grapher for precalculus and conics review.
+
+## Calculus & 3D
+- [3D Graphing Calculator](https://examgraph.netlify.app/calculus/3d-graphing-calculator/): Plot 3D surfaces z = f(x, y) and implicit equations like x² + y² + z² = 9 online. Rotate, zoom and read a colour legend, free in your browser.
+- [Parametric & Lissajous Curve Grapher](https://examgraph.netlify.app/calculus/parametric-equation-grapher/): Graph parametric equations x(t), y(t) and Lissajous curves online. A free parametric grapher with sliders to explore circles, spirals and loops.
+- [Polar Graphing Calculator](https://examgraph.netlify.app/calculus/polar-graphing-calculator/): Graph polar equations such as roses, cardioids and spirals in your browser. A free polar graphing calculator with degree and radian modes.
+- [Derivative Graphing Calculator](https://examgraph.netlify.app/calculus/derivative-graphing-calculator/): Graph a function and its derivative with d/dx( ). See slopes, maxima and minima line up, then check the second derivative too. Free online.
+- [Integral Graphing Calculator](https://examgraph.netlify.app/calculus/integral-graphing-calculator/): Shade the area under a curve with int(f, a, b) and see the value. Also graph the accumulation function. Free online integral grapher for calculus.
+- [Tangent Line Grapher](https://examgraph.netlify.app/calculus/tangent-line-graphing-calculator/): Graph a curve together with its tangent line at any point. A free online tangent line grapher to see slope and linear approximation clearly.
+- [Slope Field & Solution Curve Grapher](https://examgraph.netlify.app/calculus/slope-field-graphing-calculator/): Draw a slope field for dy/dx = f(x, y) and a solution curve through any starting point. Free online slope field grapher for AP Calculus BC.
+- [Taylor Polynomial Approximation Grapher](https://examgraph.netlify.app/calculus/taylor-polynomial-calculator/): Compare sin(x) or eˣ with Taylor polynomial approximations on one graph. A free online Taylor series grapher for AP Calculus BC and college.
+
+## Statistics & More
+- [Normal Distribution & Bell Curve Grapher](https://examgraph.netlify.app/statistics/normal-distribution-grapher/): Graph the normal distribution and see how the mean and standard deviation reshape the bell curve. A free online normal curve plotter.
+- [Bell Curve Generator](https://examgraph.netlify.app/statistics/bell-curve-generator/): Generate a bell curve from any mean and standard deviation and compare spreads side by side with this free online bell curve maker.
+- [Supply and Demand Equilibrium Grapher](https://examgraph.netlify.app/statistics/supply-and-demand-grapher/): Graph supply and demand curves and find the equilibrium price and quantity where they meet. A free online grapher for economics class.
+- [Projectile Motion Trajectory Grapher](https://examgraph.netlify.app/statistics/projectile-motion-grapher/): Graph a projectile's parabolic path, height versus distance, and adjust the equation to explore launch angle and speed. Free physics plotter.
+- [Z-Score Calculator](https://examgraph.netlify.app/statistics/z-score-calculator/): Free z-score calculator. Convert a value to a z-score, find a value from z or a percentile, and get normal-curve probabilities with a shaded bell curve.
+- [Standard Deviation Calculator](https://examgraph.netlify.app/statistics/standard-deviation-calculator/): Free standard deviation calculator. Paste your data for sample and population SD, variance, mean, standard error and a step-by-step table.
+- [Confidence Interval Calculator](https://examgraph.netlify.app/statistics/confidence-interval-calculator/): Free confidence interval calculator for a mean (t or z) or a proportion (Wilson and Wald). See margin of error, critical value and a shaded graph.
+- [T-Test Calculator](https://examgraph.netlify.app/statistics/t-test-calculator/): Free t-test calculator. Run a one-sample, Welch, pooled or paired t-test from raw data or summary statistics and get t, df, p-value and a graph.
+- [Chi-Square Calculator](https://examgraph.netlify.app/statistics/chi-square-calculator/): Free chi-square calculator. Run a goodness-of-fit or independence test, get χ², degrees of freedom, p-value, expected counts and a shaded graph.
+
+## Calculator Guides & Comparisons
+- [TI-83 Plus vs. TI-84 Plus Comparison](https://examgraph.netlify.app/compare/ti-83-plus-vs-ti-84-plus/): Compare TI-83 Plus and TI-84 Plus processor speed, memory and screen, then see free online graphing calculators you can use instead.
+- [A Free Desmos Alternative for Test Practice](https://examgraph.netlify.app/compare/desmos-alternative/): Looking for a Desmos-style graphing calculator? ExamGrapher is a free, fast alternative with exam mode, regressions, sliders and offline use.
+- [TI-84 Plus CE vs an Online Graphing Calculator](https://examgraph.netlify.app/compare/ti-84-plus-ce-vs-online-graphing-calculator/): Do you still need a $100+ TI-84 Plus CE? Compare a handheld graphing calculator with the built-in calculators on digital tests and free online graphers.
+- [Graphing Calculator for Chromebook](https://examgraph.netlify.app/guides/chromebook-graphing-calculator/): A free graphing calculator that runs on school Chromebooks with no install or extension. Install it as an app and it keeps working offline.
+- [How to Use a Graphing Calculator](https://examgraph.netlify.app/guides/how-to-use-a-graphing-calculator/): Learn how to use a graphing calculator: type equations, set the window, find intercepts and intersections, and use sliders. Try it free online.
+- [How to Solve Equations by Graphing](https://examgraph.netlify.app/guides/solve-equations-by-graphing/): Learn to solve equations by graphing: plot each side, find the intersection points and read the solutions. Free online graphing calculator included.
+- [How to Graph a Parabola Step by Step](https://examgraph.netlify.app/guides/how-to-graph-a-parabola/): How to graph a parabola: find the vertex, axis of symmetry, intercepts and direction, then check it on a free online graphing calculator.
+- [Graphing Calculator for iPad and Tablets](https://examgraph.netlify.app/guides/graphing-calculator-for-ipad-and-tablets/): A free graphing calculator for iPad and Android tablets that runs in the browser, works with touch and can be added to the home screen. No download.
+
+## Data, Regression & Finance
+- [Linear Regression Calculator](https://examgraph.netlify.app/data/linear-regression-calculator/): Paste x, y data for the least-squares line, slope, intercept, r and R², with the scatter plot and regression line graphed instantly.
+- [Quadratic Regression Calculator](https://examgraph.netlify.app/data/quadratic-regression-calculator/): Find the best-fit parabola for your data. Get a, b, c and R², then read the vertex and roots straight from the graph, free online.
+- [Exponential Regression Calculator](https://examgraph.netlify.app/data/exponential-regression-calculator/): Fit an exponential model y = a·bˣ to growth or decay data. Get the initial value, growth factor, R² and predictions on a graph.
+- [Line of Best Fit & Scatter Plot Maker](https://examgraph.netlify.app/data/line-of-best-fit-calculator/): Make a scatter plot from your data and draw the line of best fit, or try quadratic, exponential, power and log trend lines. Free, no sign-up.
+- [Compound Interest Grapher](https://examgraph.netlify.app/data/compound-interest-grapher/): Graph compound interest against simple interest with sliders for principal and rate. See how money grows over time in a free visual calculator.
+- [Exponential Growth & Decay Calculator](https://examgraph.netlify.app/data/exponential-growth-decay-calculator/): Graph exponential growth and decay, half-life and doubling time. Adjust the initial value and rate with sliders and compare models side by side.
+
+## Site
+- [About](https://examgraph.netlify.app/legal/about.html)
+- [Contact](https://examgraph.netlify.app/legal/contact.html)
+- [Sitemap](https://examgraph.netlify.app/sitemap.xml)

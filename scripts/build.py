@@ -29,7 +29,7 @@ def lastmod(key, obj):
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 DATA = json.load(open(os.path.join(ROOT, "scripts", "pages.json"), encoding="utf8"))
 SITE = DATA["site"]
-CONTACT_EMAIL = "adilwebsolutions1@gmail.com"
+CONTACT_EMAIL = "adilwebservices8@gmail.com"
 WHATSAPP = "918210225989"            # wa.me number, no plus sign
 WHATSAPP_DISPLAY = "+91 82 1022 5989"
 OG_IMAGE = SITE["domain"] + "/assets/img/og-default.png"   # default 1200x630 share image

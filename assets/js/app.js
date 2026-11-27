@@ -1126,28 +1126,28 @@
     hidden.id = "google_translate_element";
     hidden.style.display = "none";
     document.body.appendChild(hidden);
-    select.addEventListener("change", function () {
-      var target = document.querySelector(".goog-te-combo");
-      if (!target) {
-        window.__egPendingLanguage = select.value;
-        return;
-      }
-      target.value = select.value;
-      target.dispatchEvent(new Event("change", { bubbles: true }));
-    });
-    if (window.__egPendingLanguage) {
-      var pending = window.__egPendingLanguage;
-      var timer = setInterval(function () {
+    /* the Translate script is large, so it is fetched on first use instead of on every page load */
+    var timer = null;
+    function applyLanguage(lang) {
+      clearInterval(timer);
+      var tries = 0;
+      function attempt() {
         var target = document.querySelector(".goog-te-combo");
-        if (target) {
+        if (target && target.options.length > 1) {
           clearInterval(timer);
-          target.value = pending;
+          target.value = lang;
           target.dispatchEvent(new Event("change", { bubbles: true }));
-          window.__egPendingLanguage = "";
-        }
-      }, 300);
-      setTimeout(function(){ clearInterval(timer); }, 12000);
+        } else if (++tries > 40) clearInterval(timer);
+      }
+      timer = setInterval(attempt, 300);
+      attempt();
     }
+    ["focus", "pointerdown"].forEach(function (type) { select.addEventListener(type, loadGoogleTranslate, { once: true }); });
+    select.addEventListener("change", function () {
+      if (!select.value) return;
+      loadGoogleTranslate();
+      applyLanguage(select.value);
+    });
   }
   window.googleTranslateElementInit = function () {
     if (window.google && google.translate && google.translate.TranslateElement) {
@@ -1167,6 +1167,7 @@
     document.head.appendChild(script);
   }
   initLanguagePicker();
-  loadGoogleTranslate();
+  /* a visitor who already chose a language has Google's cookie: restore it straight away */
+  if (/(^|;\s*)googtrans=/.test(document.cookie)) loadGoogleTranslate();
 
 })();

@@ -47,7 +47,7 @@ ANALYTICS_SRC = "https://plausible.io/js/script.js"   # or your self-hosted scri
 def og_url(category=None):
     name = OG_BY_CATEGORY.get(category)
     return "%s/assets/img/%s.png" % (SITE["domain"], name) if name else OG_IMAGE
-ASSET_V = "23"          # bump after every css/js change so browsers reload
+ASSET_V = "30"          # bump after every css/js change so browsers reload
 
 DISCLAIMERS = {
     "exam-prep/sat-graphing-calculator/": (
@@ -126,9 +126,10 @@ def sprite():
 def icon(name, cls="i"):
     return '<svg class="%s" aria-hidden="true"><use href="#i-%s"/></svg>' % (cls, name)
 
-LOGO = ('<svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="9" fill="var(--accent)"/>'
-        '<path d="M5 8v16h22" fill="none" stroke="var(--accent-ink)" stroke-width="2" stroke-linecap="round" opacity=".55"/>'
-        '<path d="M7 9c3 12 5 14 8 9s5-2 10-9" fill="none" stroke="var(--accent-ink)" stroke-width="2.6" stroke-linecap="round"/></svg>')
+LOGO = ('<svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="var(--accent)"/>'
+        '<path d="M5 19.5h22" fill="none" stroke="var(--accent-ink)" stroke-width="1.8" stroke-linecap="round" opacity=".45"/>'
+        '<path class="logo-curve" pathLength="1" d="M8 7C11 31 21 31 24 7" fill="none" stroke="var(--accent-ink)" stroke-width="2.8" stroke-linecap="round"/>'
+        '<circle cx="16" cy="25" r="3.4" fill="#ffc53d"/></svg>')
 
 # --------------------------------------------------------------------------- shared chrome
 # --------------------------------------------------------------------------- navigation
@@ -257,13 +258,15 @@ def search_box():
 def search_tag(root):
     """Loaded on every page: site search, then site.js (cookie consent banner and Netlify form handling)."""
     tags = ('<script src="%sassets/js/search.js?v=%s" defer></script>\n'
-            '<script src="%sassets/js/site.js?v=%s" defer></script>\n' % (root, ASSET_V, root, ASSET_V))
+            '<script src="%sassets/js/site.js?v=%s" defer></script>\n'
+            '<script src="%sassets/js/motion.js?v=%s" defer></script>\n' % (root, ASSET_V, root, ASSET_V, root, ASSET_V))
     if ANALYTICS_DOMAIN:   # must come after site.js (it defines window.EGConsent)
         tags += ('<script src="%sassets/js/analytics.js?v=%s" data-domain="%s" data-src="%s" defer></script>\n'
                  % (root, ASSET_V, esc(ANALYTICS_DOMAIN), esc(ANALYTICS_SRC)))
     return tags
 
-def header(root, title_html, current, tool_page, cat=None):
+def header(root, title_html, current, tool_page, cat=None, title_tag=None):
+    tag = title_tag or ("h1" if tool_page else "p")
     share = ('<button id="shareBtn" class="icon-btn" type="button" aria-label="Share link to this graph" title="Share link">%s</button>' % icon("share")) if tool_page else ""
     gear = ('<button id="settingsBtn" class="icon-btn" type="button" aria-label="Settings" title="Settings" aria-haspopup="true" aria-expanded="false" aria-controls="settingsPanel">%s</button>' % icon("sliders")) if tool_page else ""
     settings = ""
@@ -296,7 +299,7 @@ def header(root, title_html, current, tool_page, cat=None):
         '@@SEARCHBTN@@%s%s%s'
         '<button id="themeBtn" class="icon-btn only-wide" type="button" aria-label="Toggle dark mode"><span class="ic-moon">%s</span><span class="ic-sun">%s</span></button>'
         '</header>%s%s'
-        % (icon("menu"), root, LOGO, "h1" if tool_page else "p", title_html, "h1" if tool_page else "p",
+        % (icon("menu"), root, LOGO, tag, title_html, tag,
            share, gear, more, icon("moon"), icon("sun"), cat_bar(root, current, cat), settings)
     ).replace("@@SEARCH@@", search_box()).replace("@@SEARCHBTN@@",
         '<button id="searchBtn" class="icon-btn hs-open" type="button" aria-label="Search tools" aria-expanded="false" aria-controls="hsearch">%s</button>' % icon("search"))
@@ -349,8 +352,8 @@ def _head(title, desc, canonical, root, extra="", category=None):
           '  <!-- Search Console: set GSC_TOKEN in scripts/build.py to add <meta name="google-site-verification" content="..."> here -->\n'
     theme_boot = ("(function(){try{var t=localStorage.getItem('eg-theme');"
                   "if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);}catch(e){}})();")
-    favicon = ("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%232457d6'/%3E"
-               "%3Cpath d='M7 9c3 12 5 14 8 9s5-2 10-9' fill='none' stroke='white' stroke-width='2.6' stroke-linecap='round'/%3E%3C/svg%3E")
+    favicon = ("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230a6c66'/%3E"
+               "%3Cpath d='M8 7C11 31 21 31 24 7' fill='none' stroke='white' stroke-width='3' stroke-linecap='round'/%3E%3Ccircle cx='16' cy='25' r='3.6' fill='%23ffc53d'/%3E%3C/svg%3E")
     return (
         '<!DOCTYPE html>\n<html lang="en">\n<head>\n'
         '  <meta charset="UTF-8">\n'
@@ -380,9 +383,10 @@ def _head(title, desc, canonical, root, extra="", category=None):
         '  <link rel="apple-touch-icon" href="%sassets/img/apple-touch-icon.png">\n'
         '  <meta name="apple-mobile-web-app-capable" content="yes">\n'
         '  <script>%s</script>\n'
+        '  <link rel="preload" href="%sassets/fonts/dmsans-bold.woff" as="font" type="font/woff" crossorigin>\n'
         '  <link rel="stylesheet" href="%sassets/css/style.css?v=%s">\n%s'
         '</head>\n'
-        % (esc(title), gsc, esc(desc), esc(canonical), esc(title), esc(desc), esc(canonical), og, esc(title), esc(desc), og, favicon, root, root, theme_boot, root, ASSET_V, extra))
+        % (esc(title), gsc, esc(desc), esc(canonical), esc(title), esc(desc), esc(canonical), og, esc(title), esc(desc), og, favicon, root, root, theme_boot, root, root, ASSET_V, extra))
 
 # --------------------------------------------------------------------------- calculator shell
 def app_shell():
@@ -716,11 +720,50 @@ def page_tool(p):
         footer(root) + drawer(root, p["path"]) + sprite() + scripts(root, p["exprs"], p["exam"], p["category"], p.get("fit"), p.get("params")))
     return head(p["title"], p["desc"], canonical, root, schema_tags(p, canonical) + breadcrumbs_ld(p, canonical), p["category"]) + "<body>\n" + body + "\n</body>\n</html>\n"
 
+# one small curve per topic, drawn on a 48x32 grid (original artwork)
+GLYPHS = {
+    "exam-tools": "M6 5h22v22H6zM11 17l4 4 8-10M34 8v16M40 14v10",
+    "algebra-tools": "M6 4C14 38 34 38 42 4M5 27L43 9",
+    "trig-tools": "M3 16C9 -2 17 -2 24 16S39 34 45 16",
+    "calculus-tools": "M4 28C14 28 16 6 26 6S36 20 45 10M14 28L40 2",
+    "data-tools": "M5 28L43 5M9 23h.1M15 25h.1M20 15h.1M27 18h.1M32 8h.1M39 12h.1",
+    "stats-tools": "M3 28C16 28 15 4 24 4S32 28 45 28M24 8v20",
+    "guide-tools": "M7 6h14v20H7zM27 6h14v20H27zM11 12h6M31 12h6M31 18h6",
+}
+
+def glyph(cid):
+    return ('<svg class="glyph" viewBox="0 0 48 32" aria-hidden="true"><path pathLength="1" d="%s"/></svg>' % GLYPHS[cid])
+
+def hero():
+    chips = "".join('<li><a class="topic" href="%s">%s<span>%s</span></a></li>' % (n["hub"], glyph(n["id"]), esc(n["short"])) for n in NAV_ALL)
+    art = (
+        '<figure class="demo" id="heroDemo">'
+        '<svg id="demoSvg" viewBox="0 0 520 400" role="group" aria-label="Practice graph: a parabola and the line y = 0.5x + 0.5">'
+        '<defs><pattern id="gp" width="40" height="40" patternUnits="userSpaceOnUse" x="20" y="0"><path d="M40 0H0V40" class="gp-line"/></pattern>'
+        '<clipPath id="gc"><rect width="520" height="400"/></clipPath></defs>'
+        '<rect width="520" height="400" fill="url(#gp)"/>'
+        '<path class="axis" d="M0 200H520M260 0V400"/>'
+        '<g clip-path="url(#gc)">'
+        '<path id="demoLine" class="curve line" pathLength="1" d="M0 310L520 50"/>'
+        '<path id="demoPara" class="curve para" pathLength="1" d="M104 -200Q300 760 496 -200"/>'
+        '<circle id="cutA" class="cut" r="7" cx="220" cy="200"/><circle id="cutB" class="cut" r="7" cx="420" cy="100"/>'
+        '</g>'
+        '<g id="vertex" class="vertex" tabindex="0" role="button" aria-label="Vertex of the parabola. Drag it, or use the arrow keys." transform="translate(300 280)">'
+        '<circle class="halo" r="22"/><circle class="knob" r="10"/></g>'
+        '</svg>'
+        '<figcaption class="demo-bar">'
+        '<div class="demo-eqs"><output id="demoEq" aria-live="polite">y = 0.5(x \u2212 1)\u00b2 \u2212 2</output><span class="demo-eq2">y = 0.5x + 0.5</span></div>'
+        '<label class="demo-slider"><span>Width, a</span><input id="demoA" type="range" min="-2" max="2" step="0.1" value="0.5"></label>'
+        '<p class="demo-hint">Drag the yellow point or move the slider.</p>'
+        '<a id="demoOpen" class="demo-open" href="?eq=0.5*(x-1)^2-2&amp;eq=0.5*x%2B0.5#calculator">Open this graph</a>'
+        '</figcaption></figure>')
+    return art, chips
+
 def cat_card(n):
     lis = "".join('<li><a href="%s">%s</a></li>' % (path, esc(PAGE_BY_PATH[path]["h1"])) for path in n["top"][:3])
-    return ('<div class="cat-card" id="%s"><h3><a href="%s">%s</a></h3><p>%s</p><ul>%s</ul>'
+    return ('<div class="cat-card" id="%s">%s<h3><a href="%s">%s</a></h3><p>%s</p><ul>%s</ul>'
             '<a class="cat-more" href="%s">View all %d tools &rarr;</a></div>'
-            % (n["id"], n["hub"], esc(n["name"]), esc(n["blurb"]), lis, n["hub"], len(cat_pages(n["id"]))))
+            % (n["id"], glyph(n["id"]), n["hub"], esc(n["name"]), esc(n["blurb"]), lis, n["hub"], len(cat_pages(n["id"]))))
 
 def page_home():
     h = DATA["home"]
@@ -745,13 +788,21 @@ def page_home():
         ensure_ascii=False).replace("</", "<\\/"))
     search_btn = '<button id="homeSearch" class="home-search" type="button">%s<span>Search %d graphing tools</span></button>' % (icon("search"), len(DATA["pages"]))
     body = (
-        header(root, esc(h["h1"]), None, True) + app_shell() + ad("below-calculator") +
-        '<div class="page"><section class="doc"><h2>Free online graphing calculator</h2><p>%s</p>%s</section>'
+        header(root, "Graphing calculator", None, True, title_tag="p") +
+        '<section class="hero" aria-labelledby="heroTitle"><div class="hero-inner">'
+        '<div class="hero-copy"><h1 id="heroTitle">%s</h1>'
+        '<p class="hero-lead">Type an equation and watch it take shape. Find intercepts, fit your data and practice for the SAT, ACT and AP exams.</p>'
+        '<p class="hero-actions"><a class="btn btn-primary" href="#calculator">Start graphing</a><a class="btn" href="#all-tools">Browse all tools</a></p>'
+        '<p class="hero-note">Free, with no sign-up. Works on Chromebooks.</p></div>%s'
+        '<nav class="topics" aria-label="Pick a topic"><h2>Pick a topic</h2><ul>%s</ul></nav></div></section>'
+        '<div id="calculator" class="calc-anchor">' % ((esc(h["h1"]),) + hero()) + app_shell() + '</div>' + ad("below-calculator") +
+        '<div class="page home"><section class="doc"><h2>Free online graphing calculator</h2><p>%s</p>%s</section>'
         '<section class="doc" id="all-tools"><h2>Browse graphing tools by topic</h2><div class="cat-grid">%s</div></section>'
         '<section class="doc" id="popular-tools"><h2>Popular tools</h2><div class="tools-grid">%s</div></section>%s%s%s</div>%s'
         % (esc(h["sub"]), search_btn, cards_cat, popular, trend_html, howto("graphing calculator"), signup(root), ad("below-content")) +
-        footer(root) + drawer(root) + sprite() + scripts(root, h["exprs"], False, ""))
-    return head(h["title"], h["desc"], SITE["domain"] + "/", root, site_ld) + "<body>\n" + body + "\n</body>\n</html>\n"
+        footer(root) + drawer(root) + sprite() + scripts(root, h["exprs"], False, "") +
+        '<script src="assets/js/home.js?v=%s" defer></script>\n' % ASSET_V)
+    return head(h["title"], h["desc"], SITE["domain"] + "/", root, site_ld) + '<body class="is-home">\n' + body + "\n</body>\n</html>\n"
 
 def page_hub(n):
     root = "../"
@@ -889,7 +940,8 @@ def search_index():
 def service_worker():
     """Offline support: network-first pages (fresh content for SEO and ads), cache-first versioned assets."""
     core = ["/", "/assets/css/style.css?v=%s" % ASSET_V, "/assets/js/engine.js?v=%s" % ASSET_V,
-            "/assets/js/app.js?v=%s" % ASSET_V, "/assets/js/search.js?v=%s" % ASSET_V, "/manifest.webmanifest", "/assets/img/icon-192.png"]
+            "/assets/js/app.js?v=%s" % ASSET_V, "/assets/js/search.js?v=%s" % ASSET_V,
+            "/assets/js/motion.js?v=%s" % ASSET_V, "/assets/js/home.js?v=%s" % ASSET_V, "/assets/fonts/dmsans-bold.woff", "/manifest.webmanifest", "/assets/img/icon-192.png"]
     return """/* ExamGrapher service worker - generated by scripts/build.py */
 var VERSION = "eg-%s";
 var CORE = %s;

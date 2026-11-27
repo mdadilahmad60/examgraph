@@ -10,9 +10,9 @@ from playwright.sync_api import sync_playwright
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 # slug, panel color, title, tagline, curves (JS expressions in math coords), kind
 CATS = [
-    ("default", "#2457d6", "Free online graphing calculator", "Plot, explore and practice math", "algebra"),
-    ("exam-prep", "#2457d6", "US Exam Prep", "SAT, ACT, AP and state test practice", "lines"),
-    ("functions", "#0f766e", "Algebra & Functions", "Lines, quadratics, exponentials and systems", "algebra"),
+    ("default", "#0a6c66", "Free online graphing calculator", "Plot, explore and practice math", "algebra"),
+    ("exam-prep", "#0a6c66", "US Exam Prep", "SAT, ACT, AP and state test practice", "lines"),
+    ("functions", "#1d5f8a", "Algebra & Functions", "Lines, quadratics, exponentials and systems", "algebra"),
     ("trigonometry", "#7c3aed", "Trig & Conics", "Sine, cosine, unit circle and conic sections", "trig"),
     ("calculus", "#b4231f", "Calculus & 3D", "Derivatives, integrals, polar and parametric", "calculus"),
     ("data", "#b45309", "Data & Regression", "Line of best fit, regression and finance", "data"),
@@ -29,8 +29,8 @@ HTML = """<!doctype html><html><head><meta charset="utf-8"><style>
 .s{font-size:28px;margin-top:16px;opacity:.88;line-height:1.3}
 .u{position:absolute;left:70px;bottom:56px;font-size:30px;font-weight:700}
 canvas{position:absolute;left:600px;top:0}
-</style></head><body><div class="l"><div class="logo"><svg width="64" height="64" viewBox="0 0 32 32"><path d="M7 9c3 12 5 14 8 9s5-2 10-9" fill="none" stroke="%(c)s" stroke-width="3" stroke-linecap="round"/></svg></div>
-<div class="b">ExamGrapher</div><div class="t">%(t)s</div><div class="s">%(s)s</div><div class="u">examgraphr.netlify.app</div></div>
+</style></head><body><div class="l"><div class="logo"><svg width="64" height="64" viewBox="0 0 32 32"><path d="M8 7C11 31 21 31 24 7" fill="none" stroke="%(c)s" stroke-width="3" stroke-linecap="round"/><circle cx="16" cy="25" r="3.6" fill="#ffc53d"/></svg></div>
+<div class="b">ExamGrapher</div><div class="t">%(t)s</div><div class="s">%(s)s</div><div class="u">examgraph.netlify.app</div></div>
 <canvas id="c" width="600" height="630"></canvas>
 <script>
 var kind="%(k)s",col="%(c)s",W=600,H=630,ctx=document.getElementById('c').getContext('2d');
